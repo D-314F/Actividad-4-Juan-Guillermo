@@ -1,0 +1,44 @@
+<!-- Crear un algoritmo que permita liquidar el costo de parqueo que debe pagar un usuario,
+para lo cual debe identificar si el vehículo es de tipo automóvil o motocicleta. 
+Se debe solicitar el número de horas que estuvo el vehículo en el 
+parqueadero y tener en consideración la tabla de precios;
+las motos pagan 1000 pesos por hora y un automóvil paga 2000 por hora. 
+Mostrar en pantalla el tipo de vehículo, las horas de parqueo y el precio total a pagar. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 9</title>
+</head>
+<body>
+    <script>
+        //Aqui se le avisa los costos y se le pide el tipo y las horas
+        alert("Las motos pagan 1000 pesos por hora y un auto paga 2000 por hora.")
+        let tipo = prompt("Por favor ingrese el tipo de vehículo que estuvo en el parqueadero (moto o auto)")
+        let horas = parseInt (prompt("Por favor ingrese el número de horas que estuvo el vehículo en el parqueadero"))
+        let costo = 0;
+
+    //Aqui se calcula cuanto debe pagar 
+    if (tipo === "moto") { //está revisando lo que el usuario escribió en el prompt.
+    costo = horas * 1000; //costo se uso para guardar la multplicacion 
+    alert("Tipo de vehículo: Moto_Horas: " + horas + "_Su costo es: " + costo);
+    } 
+    //En java script va despues else if 
+    else if (tipo === "auto") { //igual aca
+    costo = horas * 2000; //lo mismo aca
+    alert("Tipo de vehículo: Automóvil_Horas: " + horas + "_Su costo es: " + costo);
+    }
+    // y al final else si ninguna condicion cumple 
+    //No usar operaciones en la condicion else
+    else {  
+    alert("Tipo de vehículo no válido.");
+    }
+
+    // Usa === para comparar texto y números, es más seguro y recomendado.
+
+    </script>
+    
+</body>
+</html>

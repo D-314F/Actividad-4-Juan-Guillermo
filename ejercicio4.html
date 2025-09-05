@@ -1,0 +1,37 @@
+<!-- Crear un algoritmo que permita pedir las 4 notas de un estudiante correspondientes al
+semestre de estudio, determinar su promedio del mismo. Si el promedio es mayor o igual a 3 indicar
+que el estudiante aprobó el semestre, de lo contrario reprobó. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <script>
+        alert("Ingrea tus notas de 1 a 5 (se puede decimales como 4.5 etc)");
+        
+        //Aqui se le solicita el estudiante sus notas
+        //parseInt suma numeros enteros pero ParseFloat suma tambien decimales
+        let ciencias = parseFloat(prompt("Ingresa tu nota en Ciencias:"));
+        let math = parseFloat(prompt("Ingresa tu nota en Matemáticas:"));
+        let español = parseFloat(prompt("Ingresa tu nota en Español:"));
+        let arts = parseFloat(prompt("Ingresa tu nota en Artes:"));
+
+        //Aqui se calcula el promedio
+        let promedio = (ciencias + math + español + arts) / 4;
+        alert("Tu promedio es: " + promedio); 
+
+        //Aqui se verifica si aprobo o reprobo el semestre
+        if (promedio >= 3) {
+            alert("Aprobaste el semestre");
+        } else {
+            alert("Reprobaste el semestre");
+        }
+
+        </script>
+
+</body>
+</html>
