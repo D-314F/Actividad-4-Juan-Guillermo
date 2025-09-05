@@ -1,0 +1,27 @@
+<!-- Realizar un algoritmo que permita calcular el perímetro de una circunferencia, para lo
+cual se debe solicitar el radio de la circunferencia, pero se debe validar que dicho radio sea mayor a
+cero, de lo contrario no se puede realizar la operación.
+La fórmula para hallar el perímetro de un círculo, es la siguiente: P = 2πr donde P indica el perímetro,
+2π equivale 2 * PI y r equivale al radio. El valor de PI es 3.1415 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <script>
+        // Pedimos el radio al usuario
+        let radio = parseFloat(prompt("Por favor ingresa el radio de la circunferencia:"));
+
+        // Validamos que el radio sea mayor a cero
+        if (radio > 0) {
+            let pi = 3.1415;
+            let perimetro = 2 * pi * radio;
+            alert("El perímetro de la circunferencia es: " + perimetro);
+        } else {
+            alert("No se puede calcular el perímetro porque el radio debe ser mayor a cero.");
+        }
+    </script>
+</body>
+</html>
