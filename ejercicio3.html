@@ -10,7 +10,16 @@
     <title>Ejercicio numero 3</title>
 </head>
 <body>
-    <h1>Ingrese su edad</h1>
-    <input type="number" name="edad" id="edad">
+    <script>
+        let edad = parseInt(prompt("Ingrese su edad"));
+        if (edad  < 18 ){
+            alert("Eres menor de edad");
+        }
+        else { (edad >=18 ) //Else siempre lleva corchetes antes de la condicion 
+            alert("Eres mayor de edad");
+        }
+
+        alert("Gracias por ingresar tu edad")
+    </script>
 </body>
 </html>
